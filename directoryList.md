@@ -1,16 +1,4 @@
-# MOSEK-ADMM
-
-Code for the paper "Bi-level Convex Optimization of Eco-driving for Connected Fuel Cell Hybrid Electric Vehicles Through Signalized Intersections".
-
-## Dependencies
-
-- Matlab
-- CVX
-
-## Code structure
-
-```
-|-- AMOSEK-ADMM
+|-- undefined
     |-- README.md
     |-- set_path.m
     |-- EcoEMS_DP
@@ -20,6 +8,39 @@ Code for the paper "Bi-level Convex Optimization of Eco-driving for Connected Fu
     |   |-- FCV_EcoEMS_DP_advisor_main.m
     |   |-- FCV_EcoEMS_DP_advisor_model.m
     |   |-- get_results.m
+    |   |-- FCV_EcoEMS_DP_advisor_results
+    |       |-- Results_all_2.mat
+    |       |-- Results_all_3.mat
+    |       |-- Results_all_4.mat
+    |       |-- Results_all_5.mat
+    |       |-- 0314-1
+    |       |   |-- Results_all.mat
+    |       |   |-- Scenario5Eco.png
+    |       |   |-- Scenario5EMS.png
+    |       |   |-- Scenario6Eco.png
+    |       |   |-- Scenario6EMS.png
+    |       |   |-- Scenario8Eco.png
+    |       |   |-- Scenario8EMS.png
+    |       |-- 0314-2
+    |       |   |-- Results_all.mat
+    |       |   |-- Scenario5Eco.png
+    |       |   |-- Scenario5EMS.png
+    |       |   |-- Scenario6Eco.png
+    |       |   |-- Scenario6EMS.png
+    |       |   |-- Scenario8Eco.png
+    |       |   |-- Scenario8EMS.png
+    |       |-- Figure
+    |           |-- EcoEMS调试记录.docx
+    |           |-- Scenario5Eco_2.png
+    |           |-- Scenario5Eco_3.png
+    |           |-- Scenario5Eco_4.png
+    |           |-- Scenario5Eco_5.png
+    |           |-- Scenario5EMS_2.png
+    |           |-- Scenario5EMS_3.png
+    |           |-- Scenario5EMS_4.png
+    |           |-- Scenario5EMS_5.png
+    |           |-- ~$oEMS调试记录.docx
+    |           |-- ~WRL0003.tmp
     |-- Eco_DP
     |   |-- ComputTime.mat
     |   |-- Eco_Scenario5_DP.png
@@ -84,4 +105,3 @@ Code for the paper "Bi-level Convex Optimization of Eco-driving for Connected Fu
     |   |-- NEDC.mat
     |   |-- plot_scenario.m
     |-- Paper_Plot_python
-```
