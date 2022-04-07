@@ -1,7 +1,7 @@
 % get results for paper
 clear;clc;close all
 
-load FCV_EcoEMS_DP_advisor_results\0314-2\Results_all.mat
+load FCV_EcoEMS_DP_advisor_results\Results_all.mat
 
 EcoEMS_v_DP = cell(8,1);
 EcoEMS_res = zeros(8,3); % time,SOC_f,HC

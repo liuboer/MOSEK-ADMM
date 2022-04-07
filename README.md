@@ -20,6 +20,14 @@ Code for the paper "Bi-level Convex Optimization of Eco-driving for Connected Fu
     |   |-- FCV_EcoEMS_DP_advisor_main.m
     |   |-- FCV_EcoEMS_DP_advisor_model.m
     |   |-- get_results.m
+    |   |-- FCV_EcoEMS_DP_advisor_results
+    |       |-- Results_all.mat
+    |       |-- Scenario5Eco.png
+    |       |-- Scenario5EMS.png
+    |       |-- Scenario6Eco.png
+    |       |-- Scenario6EMS.png
+    |       |-- Scenario8Eco.png
+    |       |-- Scenario8EMS.png
     |-- Eco_DP
     |   |-- ComputTime.mat
     |   |-- Eco_Scenario5_DP.png
@@ -78,10 +86,9 @@ Code for the paper "Bi-level Convex Optimization of Eco-driving for Connected Fu
     |   |-- FCV_EMS_DP_advisor_main.m
     |   |-- FCV_EMS_DP_advisor_model.m
     |-- Functions
-    |   |-- get_scenarios_by_index.m
-    |   |-- get_s_ref.m
-    |   |-- IDM.m
-    |   |-- NEDC.mat
-    |   |-- plot_scenario.m
-    |-- Paper_Plot_python
+        |-- get_scenarios_by_index.m
+        |-- get_s_ref.m
+        |-- IDM.m
+        |-- NEDC.mat
+        |-- plot_scenario.m
 ```
