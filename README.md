@@ -1,11 +1,43 @@
 # MOSEK-ADMM
 
-Code for the paper "Bi-level Convex Optimization of Eco-driving for Connected Fuel Cell Hybrid Electric Vehicles Through Signalized Intersections".
+Code for the paper [Bi-level Convex Optimization of Eco-driving for Connected Fuel Cell Hybrid Electric Vehicles Through Signalized Intersections](http://dx.doi.org/10.1016/j.energy.2022.123956) published in ***Energy***.
+
+## Description
+
+This paper proposes a bi-level convex approach for eco-driving of a connected FCHEV proceeding through multiple signalized intersections. On the upper level, the non-linear traffic light constraints are transformed into time-varying linear state constraints and the cost function becomes quadratic after using the average speed. On the lower level, model convexification is carried out for the fuel cell system and battery. Then the upper-level speed planning and lower-level energy management are sequentially solved by the MOSEK solver and the Alternating Direction Method of Multipliers (ADMM) algorithm. The results show that the proposed bi-level convex approach greatly reduces the computational cost while maintaining high energy efficiency, with only 6.59% computational time and almost the same fuel economy compared to the bi-level Dynamic Programming (DP) method.
 
 ## Dependencies
 
 - Matlab
 - CVX
+
+## Setup
+
+Before running the code, add the folder Functions to the MATLAB search path by running set_path.m or
+```
+addpath('Functions');
+```
+
+## Details
+
+1. Scenarios 5,8,6 in the code are Scenarios 1,2,3 in the paper, respectively.
+
+2. 
+| Method | Folder |
+| :-----:| :----: |
+| MOSEK | Eco_MOSEK |
+| Upper DP | Eco_DP |
+| ADMM | EMS_ADMM |
+| Lower DP | EMS_DP |
+| Full DP | EcoEMS_DP |
+
+
+## Open source code used
+
+1. [dpm.m](https://idsc.ethz.ch/research-guzzella-onder/downloads.html) is a dynamic programming Matlab function.
+
+2. Code for the ADMM algorithm is based on [admm-energy-management](https://github.com/sebastian-east/admm-energy-management).
+
 
 ## Code structure
 
@@ -86,6 +118,7 @@ Code for the paper "Bi-level Convex Optimization of Eco-driving for Connected Fu
     |   |-- FCV_EMS_DP_advisor_main.m
     |   |-- FCV_EMS_DP_advisor_model.m
     |-- Functions
+        |-- dpm.m
         |-- get_scenarios_by_index.m
         |-- get_s_ref.m
         |-- IDM.m
